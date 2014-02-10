@@ -1,32 +1,82 @@
 "use strict";
 
-/**
- * Scroll the page to the element
- */
 jQuery.fn.extend({
+	/**
+	 * Scroll the page to the element
+	 */
 	odinOnePageScroll : function(options) {
 		options = jQuery.extend({
 			animate : true
 		}, options);
+		
+		var animatestart = {
+			type: "animatestart",
+		};
+		
+		var animatestop = {
+			type: "animatestop",
+		};
 		
 		// scroll to the page
 		var scroll = jQuery(this).offset().top - 70;
 		if(jQuery("body").hasClass("admin-bar")) {
 			scroll -= 28;
 		}
-		
+
 		var $body = jQuery("html, body");
 		if(options.animate) {
+			jQuery.event.trigger(animatestart);
 			$body.animate({
 			    scrollTop: scroll
-			}, 'medium');
+			}, 'medium', function() {
+				jQuery.event.trigger(animatestop);
+			});
 		} else {
 			$body.scrollTop(scroll);
 		}		
+	},
+
+	/**
+	 * Change the active menu
+	 */
+	odinOnePageChangeActive : function() {		
+		jQuery(this)
+			.parents("ul")
+				.find(".active")
+					.removeClass("active")
+				.end()
+			.end()
+				.addClass("active");
 	}
 });
 
 jQuery(function($) {
+	
+	var inAnimation = false;
+	$(window)
+		.on('scroll', function () {
+			if(!inAnimation) {
+			    var scrollTop = $(window).scrollTop();
+			    
+			    var found = false;
+			    $($('section').get().reverse()).each(function(i, item) {
+				    var elementOffset = $(item).offset().top;
+				    var distance = (elementOffset - scrollTop);
+				    
+				    if(distance < 75) {
+				    	$("#main-navigation").find("." + $(item).attr("id")).odinOnePageChangeActive();
+				    	return false;
+				    }
+				});
+			}
+		})
+		.on('animatestart', function() {
+			inAnimation = true;
+		})
+		.on('animatestop', function() {
+			inAnimation = false;
+		});
+	
 	// scroll to the selected page
 	if(odin_onepage.selected_page) {
 		$("#" + odin_onepage.selected_page).odinOnePageScroll({
@@ -51,15 +101,7 @@ jQuery(function($) {
 			return true;
 		}
 		
-		// change the active class
-		$(this)
-			.parents("ul")
-				.find(".active")
-					.removeClass("active")
-				.end()
-			.end()
-			.parent()
-				.addClass("active");
+		$(this).parent().odinOnePageChangeActive();
 		
 		var element_id = "#" + match[0];
 		$(element_id).odinOnePageScroll();

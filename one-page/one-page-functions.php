@@ -15,17 +15,20 @@ function odin_onepage_enqueue_assets() {
 	
 	wp_enqueue_style( 'odin-one-page-style', $assets_directory_uri . '/css/style.css' );
 	
+	wp_enqueue_script(
+			'jquery-special',
+			$assets_directory_uri . '/js/libs/jquery.inview.min.js',
+			array( 'jquery' )
+	);
 	wp_enqueue_script( 
 			'odin-one-page', 
 			$assets_directory_uri . '/js/one-page.js', 
-			array( 'jquery' ) 
+			array( 'jquery-special' ) 
 	);
 	
-	if( ! empty( $selected_page ) ) {
-		wp_localize_script( 'odin-one-page-pushstate', 'odin_onepage', array(
-			'selected_page' => $selected_page
-		) );
-	}
+	wp_localize_script( 'odin-one-page', 'odin_onepage', array(
+		'selected_page' => $selected_page
+	) );
 	
 }
 add_action( 'wp_enqueue_scripts', 'odin_onepage_enqueue_assets' );
@@ -38,7 +41,11 @@ add_action( 'wp_enqueue_scripts', 'odin_onepage_enqueue_assets' );
  * @global string $selected_page The element id of the selected page.
  * @return void
  */
-function odin_onepage_load_pages() {	
+function odin_onepage_load_pages() {
+	global $selected_page;	
+	
+	$selected_page = false;
+	
 	// if isn't page, don't load
 	$queried_object = get_queried_object();
 	if( ! $queried_object || $queried_object->post_type != 'page' ) {
@@ -60,7 +67,6 @@ function odin_onepage_load_pages() {
 	$found = false;
 	foreach( $items as $item ) {
 		if( $item->url == $url ) {
-			global $selected_page;
 			
 			$selected_page = "post-" . $item->object_id;
 			$found = true;
