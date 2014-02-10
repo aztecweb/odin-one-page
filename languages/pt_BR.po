@@ -1,0 +1,598 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Odin v2.2.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-06-07 18:43-0300\n"
+"PO-Revision-Date: 2013-12-12 06:04:09+0000\n"
+"Last-Translator: Rafael Funchal <rafaelfunchal@gmail.com>\n"
+"Language-Team: WordPress Brasil Group\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Textdomain-Support: yes"
+
+#: image.php:23
+#, php-format
+#@ odin
+msgid "Image total size: %s pixels"
+msgstr "Tamanho total da imagem: %s pixels"
+
+#: image.php:23
+#@ odin
+msgid "Full image link"
+msgstr "Link da imagem completa"
+
+#: audio.php:30
+#: image.php:40
+#: video.php:30
+#, php-format
+#@ odin
+msgid "Back to %s"
+msgstr "Voltar para %s"
+
+#: audio.php:30
+#: image.php:40
+#: video.php:30
+#, php-format
+#@ odin
+msgid "<span class=\"meta-nav\">&larr;</span> %s"
+msgstr "<span class=\"meta-nav\">&larr;</span> %s"
+
+#: content.php:36
+#@ odin
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Continue lendo <span class=\"meta-nav\">&rarr;</span>"
+
+#: content-page.php:17
+#: content.php:38
+#@ odin
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: image.php:35
+#@ odin
+msgid "Next image &rarr;"
+msgstr "Próxima imagem &rarr;"
+
+#: image.php:34
+#@ odin
+msgid "&larr; Previous image"
+msgstr "&larr; Imagem anterior"
+
+#: comments.php:13
+#@ odin
+msgid "This post is password protected. Enter the password to view all comments."
+msgstr "Esse post é protegido por senha. Informe a senha para ver todos os comentários."
+
+#: comments.php:22
+#@ odin
+msgid "0 Comments"
+msgstr "0 Comentários"
+
+#: comments.php:22
+#: content.php:53
+#@ odin
+msgid "1 Comment"
+msgstr "1 Comentário"
+
+#: comments.php:22
+#: content.php:53
+#@ odin
+msgid "% Comments"
+msgstr "% Comentários"
+
+#: comments.php:28
+#: comments.php:37
+#@ odin
+msgid "&larr; Old Comments"
+msgstr "&larr; Comentários Antigos"
+
+#: comments.php:29
+#: comments.php:38
+#@ odin
+msgid "New Comments &rarr;"
+msgstr "Novos Comentários &rarr;"
+
+#: comments.php:43
+#@ odin
+msgid "Comments closed."
+msgstr "Comentários não são permitidos."
+
+#. gettext fix: identical singular and plural forms found, that may be ambiguous! Please check the code!
+#: comments.php:54
+#@ odin
+msgid "Comment"
+msgid_plural "odin"
+msgstr[0] "Comentário"
+msgstr[1] "odin"
+
+#: comments.php:56
+#@ odin
+msgid "Name"
+msgstr "Nome"
+
+#: comments.php:57
+#@ odin
+msgid "E-mail"
+msgstr "E-mail"
+
+#: comments.php:58
+#@ odin
+msgid "Website"
+msgstr "Website"
+
+#: footer.php:17
+#@ odin
+msgid "All rights reserved"
+msgstr "Todos os direitos reservados"
+
+#: functions.php:60
+#@ odin
+msgid "Main Menu"
+msgstr "Menu Principal"
+
+#: functions.php:153
+#@ odin
+msgid "Main Sidebar"
+msgstr "Sidebar Principal"
+
+#: functions.php:155
+#@ odin
+msgid "Site Main Sidebar"
+msgstr "Sidebar principal do site"
+
+#: header.php:53
+#@ odin
+msgid "Skip to content"
+msgstr "Pular para o conteúdo"
+
+#: header.php:83
+#@ odin
+msgid "Search:"
+msgstr "Pesquisar:"
+
+#: content-none.php:11
+#@ odin
+msgid "Nothing Found"
+msgstr "Nada Encontrado"
+
+#: header.php:87
+#: searchform.php:12
+#: searchform.php:15
+#@ odin
+msgid "Search"
+msgstr "Pesquisa"
+
+#: core/helpers.php:56
+#@ odin
+msgid "&laquo; Previous"
+msgstr "&laquo; Anterior"
+
+#: core/helpers.php:57
+#@ odin
+msgid "Next &raquo;"
+msgstr "Próximo &raquo;"
+
+#: core/helpers.php:317
+#, php-format
+#@ odin
+msgid "%sCategory: %s%s"
+msgstr "%sCategoria: %s%s"
+
+#: core/helpers.php:321
+#, php-format
+#@ odin
+msgid "%sTag: %s%s"
+msgstr "%sTag: %s%s"
+
+#: core/helpers.php:329
+#, php-format
+#@ odin
+msgid "%sSearch result for: &quot;%s&quot;%s"
+msgstr "%sResultado da busca para: &quot;%s&quot;%s"
+
+#: core/helpers.php:336
+#@ odin
+msgid "Posted by"
+msgstr "Publicado por"
+
+#: core/helpers.php:375
+#@ odin
+msgid "404 Error"
+msgstr "Erro 404"
+
+#: core/helpers.php:382
+#: core/helpers.php:384
+#: inc/optimize.php:27
+#, php-format
+#@ odin
+msgid "Page %s"
+msgstr "Página %s"
+
+#: core/classes/class-metabox.php:78
+#: core/classes/class-metabox.php:424
+#: core/classes/class-theme-options.php:89
+#: core/classes/class-theme-options.php:619
+#@ odin
+msgid "Add images in gallery"
+msgstr "Adicionar imagens na galeria"
+
+#: core/classes/class-metabox.php:79
+#: core/classes/class-theme-options.php:90
+#@ odin
+msgid "Add in gallery"
+msgstr "Adicionar na galeria"
+
+#: core/classes/class-metabox.php:80
+#: core/classes/class-metabox.php:388
+#: core/classes/class-metabox.php:413
+#: core/classes/class-theme-options.php:91
+#: core/classes/class-theme-options.php:573
+#: core/classes/class-theme-options.php:608
+#@ odin
+msgid "Remove image"
+msgstr "Remover imagem"
+
+#: core/classes/class-metabox.php:366
+#: core/classes/class-theme-options.php:540
+#@ odin
+msgid "Select file"
+msgstr "Selecionar arquivo"
+
+#: core/classes/class-metabox.php:388
+#: core/classes/class-theme-options.php:573
+#@ odin
+msgid "Select image"
+msgstr "Selecionar imagem"
+
+#: core/classes/class-post-type.php:73
+#: core/classes/class-post-type.php:80
+#: core/classes/class-taxonomy.php:75
+#: core/classes/class-taxonomy.php:84
+#, php-format
+#@ odin
+msgid "%ss"
+msgstr "%ss"
+
+#: core/classes/class-post-type.php:74
+#: core/classes/class-taxonomy.php:76
+#, php-format
+#@ odin
+msgid "%s"
+msgstr "%s"
+
+#: core/classes/class-post-type.php:75
+#: core/classes/class-taxonomy.php:78
+#, php-format
+#@ odin
+msgid "View %s"
+msgstr "Ver %s"
+
+#: core/classes/class-post-type.php:76
+#: core/classes/class-taxonomy.php:79
+#, php-format
+#@ odin
+msgid "Edit %s"
+msgstr "Editar %s"
+
+#: core/classes/class-post-type.php:77
+#: core/classes/class-taxonomy.php:80
+#, php-format
+#@ odin
+msgid "Search %s"
+msgstr "Pesquisar %s"
+
+#: core/classes/class-post-type.php:78
+#: core/classes/class-taxonomy.php:81
+#, php-format
+#@ odin
+msgid "Update %s"
+msgstr "Atualizar  %s"
+
+#: core/classes/class-post-type.php:79
+#: core/classes/class-taxonomy.php:82
+#: core/classes/class-taxonomy.php:83
+#, php-format
+#@ odin
+msgid "Parent %s:"
+msgstr "Parente %s"
+
+#: core/classes/class-post-type.php:81
+#@ odin
+msgid "Add New"
+msgstr "Adicionar Novo"
+
+#: core/classes/class-post-type.php:82
+#: core/classes/class-taxonomy.php:85
+#, php-format
+#@ odin
+msgid "Add New %s"
+msgstr "Adicionar Novo %s"
+
+#: core/classes/class-post-type.php:83
+#: core/classes/class-taxonomy.php:86
+#, php-format
+#@ odin
+msgid "New %s"
+msgstr "Novo %s"
+
+#: core/classes/class-post-type.php:84
+#: core/classes/class-taxonomy.php:87
+#, php-format
+#@ odin
+msgid "All %ss"
+msgstr "Todos os %ss"
+
+#: core/classes/class-post-type.php:85
+#, php-format
+#@ odin
+msgid "No %s found"
+msgstr "Nenhum %s encontrado"
+
+#: core/classes/class-post-type.php:86
+#, php-format
+#@ odin
+msgid "No %s found in Trash"
+msgstr "Nenhum %s encontrado na Lixeira"
+
+#: core/classes/class-taxonomy.php:77
+#, php-format
+#@ odin
+msgid "Add or Remove %ss"
+msgstr "Adicionar ou Remover %ss"
+
+#: core/classes/class-taxonomy.php:88
+#, php-format
+#@ odin
+msgid "Separate %ss with comma"
+msgstr "Separe %ss com vírgula"
+
+#: core/classes/class-taxonomy.php:89
+#, php-format
+#@ odin
+msgid "Choose from %ss most used"
+msgstr "Escolher entre os %ss mais usados"
+
+#: inc/comments-loop.php:23
+#: inc/comments-loop.php:33
+#@ odin
+msgid "Edit"
+msgstr "Editar"
+
+#: inc/comments-loop.php:32
+#@ odin
+msgid "in"
+msgstr "em"
+
+#: inc/comments-loop.php:32
+#@ odin
+msgid "at"
+msgstr "as"
+
+#: inc/comments-loop.php:32
+#@ odin
+msgid "said:"
+msgstr "disse:"
+
+#: inc/comments-loop.php:36
+#@ odin
+msgid "Your comment is awaiting moderation."
+msgstr "Seu comentário está aguardando moderação."
+
+#: inc/comments-loop.php:41
+#@ odin
+msgid "Respond"
+msgstr "Responder"
+
+#: core/classes/class-metabox.php:81
+#: core/classes/class-theme-options.php:92
+#@ odin
+msgid "Choose a file"
+msgstr "Selecione um arquivo"
+
+#: core/classes/class-metabox.php:82
+#: core/classes/class-theme-options.php:93
+#@ odin
+msgid "Add file"
+msgstr "Adicionar arquivo"
+
+#: comments.php:23
+#@ odin
+msgid "to"
+msgstr "para"
+
+#: inc/template-tags.php:67
+#@ odin
+msgid "Posted in"
+msgstr "Publicado em"
+
+#: inc/comments-loop.php:23
+#@ odin
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: core/classes/class-bootstrap-nav.php:203
+#@ odin
+msgid "Add a menu"
+msgstr "Adicionar um menu"
+
+#: audio.php:24
+#: video.php:24
+#@ odin
+msgid "URL:"
+msgstr "URL:"
+
+#: header.php:56
+#@ odin
+msgid "Toggle navigation"
+msgstr "Alternar navegação"
+
+#: core/classes/abstracts/abstract-front-end-form.php:234
+#@ odin
+msgid "Submit"
+msgstr "Enviar"
+
+#: core/classes/abstracts/abstract-front-end-form.php:276
+#@ odin
+msgid "Form submitted successfully!"
+msgstr "Formulário enviado com sucesso!"
+
+#: core/classes/abstracts/abstract-front-end-form.php:507
+#, php-format
+#@ odin
+msgid "%s is required."
+msgstr "%s é um campo obrigatório."
+
+#: core/classes/abstracts/abstract-front-end-form.php:513
+#, php-format
+#@ odin
+msgid "%s must be an email address valid."
+msgstr "%s precisa ser um endereço de email válido"
+
+#: core/classes/class-contact-form.php:170
+#, php-format
+#@ odin
+msgid "Message sent by the form %s in %s at %s"
+msgstr "Mensagem enviada pelo formulário %s em %s às %s"
+
+#: 404.php:15
+#@ odin
+msgid "Not Found"
+msgstr "Nada Encontrado"
+
+#: 404.php:19
+#@ odin
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Parece que nada foi encontrado neste local. Talvez tentar uma pesquisa?"
+
+#: archive.php:30
+#, php-format
+#@ odin
+msgid "Daily Archives: %s"
+msgstr "Arquivos Diários: %s"
+
+#: archive.php:33
+#, php-format
+#@ odin
+msgid "Monthly Archives: %s"
+msgstr "Arquivos Mensais: %s"
+
+#: archive.php:33
+#@ odin
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:36
+#, php-format
+#@ odin
+msgid "Yearly Archives: %s"
+msgstr "Arquivos Anuais: %s"
+
+#: archive.php:36
+#@ odin
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:39
+#@ odin
+msgid "Archives"
+msgstr "Arquivos"
+
+#: author.php:30
+#, php-format
+#@ odin
+msgid "All posts by %s"
+msgstr "Todos as publicações por %s"
+
+#: category.php:19
+#, php-format
+#@ odin
+msgid "Category Archives: %s"
+msgstr "Arquivo da Categoria: %s"
+
+#: content-none.php:17
+#, php-format
+#@ odin
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Pronto para publicar o seu primeiro post? <a href=\"%1$s\">Comece agora aqui</a>."
+
+#: content-none.php:21
+#@ odin
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Desculpe, mas nada foi encontrado com os termos da sua pesquisa. Por favor, tente novamente com algumas palavras-chave diferentes."
+
+#: content-none.php:26
+#@ odin
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Parece que não conseguimos encontrar o que você está procurando. Talvez a pesquisa pode ajudar."
+
+#: content.php:49
+#@ odin
+msgid "Posted in:"
+msgstr "Publicado em:"
+
+#: content.php:49
+#@ odin
+msgctxt "Used between list items, there is a space after the comma."
+msgid ", "
+msgstr ", "
+
+#: content.php:51
+#@ odin
+msgid "Tagged as:"
+msgstr "Marcado como:"
+
+#: content.php:53
+#@ odin
+msgid "Leave a comment"
+msgstr "Deixe um comentário"
+
+#: core/helpers.php:98
+#@ odin
+msgid "Related Posts"
+msgstr "Artigos Relacionados"
+
+#: core/helpers.php:225
+#@ odin
+msgid "Home"
+msgstr "Início"
+
+#: footer.php:17
+#, php-format
+#@ odin
+msgid "Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Odin</a> forces and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</a>."
+msgstr "Powered by the <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">Odin</a> forces and <a href=\"%s\" rel=\"nofollow\" target=\"_blank\">WordPress</a>."
+
+#: inc/template-tags.php:62
+#@ odin
+msgid "Sticky"
+msgstr "Destacado"
+
+#: inc/template-tags.php:70
+#@ odin
+msgid "by"
+msgstr "por"
+
+#: search.php:17
+#, php-format
+#@ odin
+msgid "Search Results for: %s"
+msgstr "Resultado de Busca por: %s"
+
+#: tag.php:21
+#, php-format
+#@ odin
+msgid "Tag Archives: %s"
+msgstr "Arquivo da Tag: %s"
+
