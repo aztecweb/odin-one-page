@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The Header for our theme.
  *
@@ -32,7 +33,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div class="container">
 		<header id="header" role="banner">
 
 			<nav id="main-navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -73,4 +73,4 @@
 			</nav><!-- #main-menu -->
 		</header><!-- #header -->
 
-		<div id="main" class="site-main row">
+		<div id="main" class="site-main">

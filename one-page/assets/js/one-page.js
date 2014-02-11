@@ -18,9 +18,10 @@ jQuery.fn.extend({
 		};
 		
 		// scroll to the page
-		var scroll = jQuery(this).offset().top - 70;
+		var top = jQuery("#main-navigation").outerHeight(true);
+		var scroll = jQuery(this).offset().top - top;
 		if(jQuery("body").hasClass("admin-bar")) {
-			scroll -= 28;
+			// reduce the admin bar height
 		}
 
 		var $body = jQuery("html, body");
@@ -39,7 +40,7 @@ jQuery.fn.extend({
 	/**
 	 * Change the active menu
 	 */
-	odinOnePageChangeActive : function() {		
+	odinOnePageChangeActive : function() {
 		jQuery(this)
 			.parents("ul")
 				.find(".active")
@@ -58,12 +59,12 @@ jQuery(function($) {
 			if(!inAnimation) {
 			    var scrollTop = $(window).scrollTop();
 			    
-			    var found = false;
+				var top = jQuery("#main-navigation").outerHeight(true);
 			    $($('section').get().reverse()).each(function(i, item) {
 				    var elementOffset = $(item).offset().top;
 				    var distance = (elementOffset - scrollTop);
-				    
-				    if(distance < 75) {
+
+				    if(distance <= top + 1) {
 				    	$("#main-navigation").find("." + $(item).attr("id")).odinOnePageChangeActive();
 				    	return false;
 				    }
@@ -100,7 +101,7 @@ jQuery(function($) {
 		if(match == null) {
 			return true;
 		}
-		
+
 		$(this).parent().odinOnePageChangeActive();
 		
 		var element_id = "#" + match[0];

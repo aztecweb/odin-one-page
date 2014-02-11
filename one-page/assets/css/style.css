@@ -2,6 +2,10 @@ body {
 	padding-top: 50px;
 }
 
+.navbar-fixed-top {
+	margin-bottom: 0;
+}
+
 .admin-bar .navbar-fixed-top {
 	margin-top: 28px;
 }

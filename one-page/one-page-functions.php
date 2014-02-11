@@ -68,7 +68,7 @@ function odin_onepage_load_pages() {
 	foreach( $items as $item ) {
 		if( $item->url == $url ) {
 			
-			$selected_page = "post-" . $item->object_id;
+			$selected_page = "page-" . $item->object_id;
 			$found = true;
 			continue;
 		}
