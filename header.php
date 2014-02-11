@@ -33,6 +33,11 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+	<?php if( ! odin_is_onepage() ) : ?>
+	<div class="container">
+	<?php endif; ?>
+	
 		<header id="header" role="banner">
 
 			<nav id="main-navigation" class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -73,4 +78,5 @@
 			</nav><!-- #main-menu -->
 		</header><!-- #header -->
 
-		<div id="main" class="site-main">
+		<?php $main_row_class = odin_is_onepage( ) ? '' : ' row' ?>
+		<div id="main" class="site-main<?php echo $main_row_class ?>">

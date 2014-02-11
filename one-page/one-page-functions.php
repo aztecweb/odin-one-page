@@ -39,10 +39,11 @@ add_action( 'wp_enqueue_scripts', 'odin_onepage_enqueue_assets' );
  * @since 
  *
  * @global string $selected_page The element id of the selected page.
+ * @global string $template The one page template file path.
  * @return void
  */
 function odin_onepage_load_pages() {
-	global $selected_page;	
+	global $selected_page, $template;	
 	
 	$selected_page = false;
 	
@@ -78,7 +79,8 @@ function odin_onepage_load_pages() {
 		return;
 	}
 	
-	require get_template_directory() . '/onepage.php';
+	$template = get_template_directory() . '/onepage.php';
+	require $template;
 	exit;
 }
 add_action( 'template_redirect', 'odin_onepage_load_pages' );
@@ -116,3 +118,16 @@ function odin_onepage_add_menu_item_class( $classes, $item, $args ) {
 }
 add_filter( 'nav_menu_css_class', 'odin_onepage_add_menu_item_class', 10, 3 );
 
+/**
+ * Is the One Page template?
+ *
+ * @since 
+ *
+ * @global string $template The one page template file path.
+ * @return bool If the template loaded is the One Page.
+ */
+function odin_is_onepage() {
+	global $template;
+	
+	return basename( $template ) == 'onepage.php';
+}
